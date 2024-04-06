@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compra</title>
+</head>
+<body>
+    
+    <script>
+
+        let ListaFrutas = ( "laranja", "Maçã", "Banana", "Pêra")
+
+        let loop = true
+
+        while (loop == true) {
+
+            let ListaFrutas = prompt ("digite o nome de uma das frutas")
+
+            let index = ListaFrutas.indexOf(ListaFrutas)
+
+            if (index > -1) {
+                ListaFrutas.splice (index, 1);
+                alert ("A fruta foi removida")
+            } else {
+                alert ("A fruta não existe na lista")
+            }
+
+            if (ListaFrutas.length <1) {
+                alert ("lista de compras finalizada")
+                loop = false
+
+            }
+        }
+    </script>
+
+
+</body>
+</html>
